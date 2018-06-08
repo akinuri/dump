@@ -1,6 +1,6 @@
 import getpass
 
-from PIL import Image
+from pgmagick import Image
 
 username = getpass.getuser()
 
@@ -16,7 +16,7 @@ images = [
 for img_name in images:
     path = img_dir + "\\" + img_name
     try:
-        img = Image.open(path)
+        img = Image(path)
     except OSError as e:
         print(e)
     else:
