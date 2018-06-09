@@ -14,7 +14,8 @@ except OSError as e:
     print("\nconverting it to 8-bit\n")
     
     import subprocess
-    args = ["C:\\Program Files\\GDAL\\gdal_translate.exe", "-ot", "byte", "-of", "GTIFF", "-scale", "-co", "PHOTOMETRIC=CMYK", img_input, img_output]
+    # args = ["C:\\Program Files\\GDAL\\gdal_translate.exe", "-ot", "byte", "-of", "GTIFF", "-scale", "-co", "PHOTOMETRIC=CMYK", img_input, img_output]
+    args = ["C:\\Program Files\\GDAL\\gdal_translate.exe", "-ot", "byte", "-of", "GTIFF", "-scale", "-co", "PHOTOMETRIC=CMYK", "-co", "SOURCE_ICC_PROFILE=Color_Profiles\\USWebCoatedSWOP.icc", img_input, img_output]
     subprocess.call(args)
     
     print("\nopening converted file")
