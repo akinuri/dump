@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 from libtiff import TIFF
 
-input_img = TIFF.open("input_cmyk-16.tif").read_image()
+input_img = TIFF.open("input_delta-cmyk-16.tif").read_image()
 
 def reduceDepth(image, display_min, display_max):
     image -= display_min
