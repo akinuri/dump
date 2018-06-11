@@ -1,2 +1,0 @@
-if img.mode == "CMYK":
-    img = ImageCms.profileToProfile(img, cwd + "\\modules\\Color_Profiles\\USWebCoatedSWOP.icc", cwd + "\\modules\\Color_Profiles\\sRGB_Color_Space_Profile.icm", outputMode="RGB")
