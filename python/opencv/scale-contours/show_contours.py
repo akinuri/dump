@@ -10,10 +10,6 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 import cv2
 import numpy
 
-import time
-
-from pprint import pprint
-
 # drop an image on this script file
 img_path = Path(sys.argv[1])
 
