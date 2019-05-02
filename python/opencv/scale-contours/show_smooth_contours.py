@@ -56,8 +56,21 @@ dilated_mask     = dilate_mask(orig_mask, 50)
 dilated_contours = find_contours(dilated_mask)
 dilated_output   = draw_contours(orig_img, dilated_contours)
 
-cv2.imshow("orig_output", orig_output)
+# pass 1
+smooth_mask_blurred   = cv2.GaussianBlur(dilated_mask, (21,21), 0)
+smooth_mask_threshed1 = cv_threshold(smooth_mask_blurred, 128)
+
+# pass 2
+smooth_mask_blurred   = cv2.GaussianBlur(smooth_mask_threshed1, (21,21), 0)
+smooth_mask_threshed2 = cv_threshold(smooth_mask_blurred, 128)
+
+# find contours from smoothened mask
+smooth_mask_contours = find_contours(smooth_mask_threshed2)
+# draw the contours on the original image
+smooth_mask_output   = draw_contours(orig_img, smooth_mask_contours)
+
 cv2.imshow("dilated_output", dilated_output)
+cv2.imshow("smooth_mask_output", smooth_mask_output)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
