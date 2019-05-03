@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 import cv2
 import numpy
@@ -6,10 +7,12 @@ from PIL import ImageCms
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-def cmyk_to_rgb(cmyk_img):
+cwd = os.path.dirname(os.path.abspath(__file__))
+
+def cmyk_to_bgr(cmyk_img):
     img = Image.open(cmyk_img)
     if img.mode == "CMYK":
-        img = ImageCms.profileToProfile(img, "Color Profiles\\USWebCoatedSWOP.icc", "Color Profiles\\sRGB_Color_Space_Profile.icm", outputMode="RGB")
+        img = ImageCms.profileToProfile(img, cwd + "\\Color Profiles\\USWebCoatedSWOP.icc", cwd + "\\Color Profiles\\sRGB_Color_Space_Profile.icm", outputMode="RGB")
     return cv2.cvtColor(numpy.array(img), cv2.COLOR_RGB2BGR)
 
 def gray_to_bgr(img):
@@ -17,7 +20,7 @@ def gray_to_bgr(img):
         img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
     return img
 
-def cv_threshold(img, thresh=128, maxval=255, type=cv2.THRESH_BINARY):
+def threshold(img, thresh=128, maxval=255, type=cv2.THRESH_BINARY):
     if len(img.shape) == 3:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     threshed = cv2.threshold(img, thresh, maxval, type)[1]
@@ -47,5 +50,5 @@ def draw_contours(src_img, contours):
 
 def smooth_mask(mask):
     blurred  = cv2.GaussianBlur(mask, (21,21), 0)
-    threshed = cv_threshold(blurred)
+    threshed = threshold(blurred)
     return threshed

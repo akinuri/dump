@@ -6,7 +6,7 @@ import numpy
 
 img_path = Path(sys.argv[1])
 
-orig_img      = cmyk_to_rgb(str(img_path))
+orig_img      = cmyk_to_bgr(str(img_path))
 orig_threshed = cv_threshold(orig_img, 240, type=cv2.THRESH_BINARY_INV)
 orig_contours = find_contours(orig_threshed)
 orig_mask     = mask_from_contours(orig_img, orig_contours)
