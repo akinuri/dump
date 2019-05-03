@@ -24,7 +24,7 @@ def cv_threshold(img, thresh=128, maxval=255, type=cv2.THRESH_BINARY):
     threshed = cv2.threshold(img, thresh, maxval, type)[1]
     return threshed
 
-def find_contours(img, to_gray=None):
+def find_contours(img):
     kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11,11))
     morphed  = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
     contours = cv2.findContours(morphed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -58,11 +58,11 @@ dilated_output   = draw_contours(orig_img, dilated_contours)
 
 # pass 1
 smooth_mask_blurred   = cv2.GaussianBlur(dilated_mask, (21,21), 0)
-smooth_mask_threshed1 = cv_threshold(smooth_mask_blurred, 128)
+smooth_mask_threshed1 = cv_threshold(smooth_mask_blurred)
 
 # pass 2
 smooth_mask_blurred   = cv2.GaussianBlur(smooth_mask_threshed1, (21,21), 0)
-smooth_mask_threshed2 = cv_threshold(smooth_mask_blurred, 128)
+smooth_mask_threshed2 = cv_threshold(smooth_mask_blurred)
 
 # find contours from smoothened mask
 smooth_mask_contours = find_contours(smooth_mask_threshed2)

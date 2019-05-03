@@ -24,7 +24,7 @@ def cv_threshold(img, thresh=128, maxval=255, type=cv2.THRESH_BINARY):
     threshed = cv2.threshold(img, thresh, maxval, type)[1]
     return threshed
 
-def find_contours(img, to_gray=None):
+def find_contours(img):
     kernel   = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11,11))
     morphed  = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
     contours = cv2.findContours(morphed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -47,7 +47,7 @@ def draw_contours(src_img, contours):
     return canvas
 
 orig_img      = cmyk_to_rgb(str(img_path))
-orig_threshed = cv_threshold(orig_img, 240, 255, cv2.THRESH_BINARY_INV)
+orig_threshed = cv_threshold(orig_img, 240, type=cv2.THRESH_BINARY_INV)
 orig_contours = find_contours(orig_threshed)
 orig_mask     = mask_from_contours(orig_img, orig_contours)
 orig_output   = draw_contours(orig_img, orig_contours)
