@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
-from helpers_cv2 import *
 import cv2
 import numpy
+from helpers_cv2 import *
 
 img_path = Path(sys.argv[1])
 
