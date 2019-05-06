@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import math
 import cv2
 import numpy
 from PIL import Image
@@ -32,12 +33,15 @@ def find_contours(img):
     contours = cv2.findContours(morphed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     return contours[-2]
 
+def max_contour(contours):
+    return sorted(contours, key=cv2.contourArea)[-1]
+
 def mask_from_contours(ref_img, contours):
     mask = numpy.zeros(ref_img.shape, numpy.uint8)
     mask = cv2.drawContours(mask, contours, -1, (255,255,255), -1)
     return cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
 
-def dilate_mask(mask, kernel_size=10):
+def dilate_mask(mask, kernel_size=11):
     kernel  = numpy.ones((kernel_size,kernel_size), numpy.uint8)
     dilated = cv2.dilate(mask, kernel, iterations=1)
     return dilated
@@ -48,7 +52,22 @@ def draw_contours(src_img, contours):
     cv2.rectangle(canvas, (x,y), (x+w,y+h), (0,0,255), 2)
     return canvas
 
-def smooth_mask(mask):
-    blurred  = cv2.GaussianBlur(mask, (21,21), 0)
+def smooth_mask(mask, kernel_size=11):
+    blurred  = cv2.GaussianBlur(mask, (kernel_size, kernel_size), 0)
     threshed = threshold(blurred)
     return threshed
+
+def alpha_blend(background, foreground, mask):
+    mask       = mask.astype("float") / 255.
+    foreground = foreground.astype("float") / 255.
+    background = background.astype("float") / 255.
+    out        = background * (1 - mask) + foreground * mask
+    out        = (out * 255).astype("uint8")
+    return out
+
+def odd(num):
+    if isinstance(num, float):
+        num = math.floor(num)
+    if num % 2 == 0:
+        num = num - 1
+    return num

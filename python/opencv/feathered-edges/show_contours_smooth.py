@@ -6,8 +6,8 @@ import numpy
 
 img_path = Path(sys.argv[1])
 
-orig_img      = cmyk_to_rgb(str(img_path))
-orig_threshed = cv_threshold(orig_img, 240, type=cv2.THRESH_BINARY_INV)
+orig_img      = cmyk_to_bgr(str(img_path))
+orig_threshed = threshold(orig_img, 240, type=cv2.THRESH_BINARY_INV)
 orig_contours = find_contours(orig_threshed)
 orig_mask     = mask_from_contours(orig_img, orig_contours)
 orig_output   = draw_contours(orig_img, orig_contours)
@@ -18,11 +18,11 @@ dilated_output   = draw_contours(orig_img, dilated_contours)
 
 # pass 1
 smooth_mask_blurred   = cv2.GaussianBlur(dilated_mask, (21,21), 0)
-smooth_mask_threshed1 = cv_threshold(smooth_mask_blurred)
+smooth_mask_threshed1 = threshold(smooth_mask_blurred)
 
 # pass 2
 smooth_mask_blurred   = cv2.GaussianBlur(smooth_mask_threshed1, (21,21), 0)
-smooth_mask_threshed2 = cv_threshold(smooth_mask_blurred)
+smooth_mask_threshed2 = threshold(smooth_mask_blurred)
 
 # find contours from smoothened mask
 smooth_mask_contours = find_contours(smooth_mask_threshed2)
