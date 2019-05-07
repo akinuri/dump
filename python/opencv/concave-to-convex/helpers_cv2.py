@@ -13,7 +13,7 @@ cwd = os.path.dirname(os.path.abspath(__file__))
 def cmyk_to_bgr(cmyk_img):
     img = Image.open(cmyk_img)
     if img.mode == "CMYK":
-        img = ImageCms.profileToProfile(img, cwd + "\\Color Profiles\\USWebCoatedSWOP.icc", cwd + "\\Color Profiles\\sRGB_Color_Space_Profile.icm", outputMode="RGB")
+        img = ImageCms.profileToProfile(img, "\\Color Profiles\\USWebCoatedSWOP.icc", cwd + "\\Color Profiles\\sRGB_Color_Space_Profile.icm", outputMode="RGB")
     return cv2.cvtColor(numpy.array(img), cv2.COLOR_RGB2BGR)
 
 def gray_to_bgr(img):
@@ -48,7 +48,7 @@ def mask_from_contours(ref_img, contours):
     return cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
 
 def dilate_mask(mask, kernel_size=11):
-    kernel  = numpy.ones((kernel_size,kernel_size), numpy.uint8)
+    kernel  = numpy.ones((kernel_size, kernel_size), numpy.uint8)
     dilated = cv2.dilate(mask, kernel, iterations=1)
     return dilated
 
