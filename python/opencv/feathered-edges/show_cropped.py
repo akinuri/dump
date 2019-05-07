@@ -8,9 +8,9 @@ import math
 img_path = Path(sys.argv[1])
 
 img      = cmyk_to_bgr(str(img_path))
-threshed = cv_threshold(img, 240, type=cv2.THRESH_BINARY_INV)
+threshed = threshold(img, 240, type=cv2.THRESH_BINARY_INV)
 contours = find_contours(threshed)
-contour  = sorted(contours, key=cv2.contourArea)[-1]
+contour  = max_contour(contours)
 
 x, y, w, h = cv2.boundingRect(contour)
 
