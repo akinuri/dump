@@ -19,10 +19,13 @@ mask_dilate = dilate_mask(mask_smooth, 51)
 mask_smooth = smooth_mask(mask_dilate, 51)
 
 # convex hull ops
+# find contours from the mask (contours needs to be calculated again because the mask is updated)
 contours = find_contours(mask_smooth)
+# find and store hull points
 hull = []
 for i in range(len(contours)):
     hull.append(cv2.convexHull(contours[i], False))
+# create a mask from hull points
 hull = mask_from_contours(img, hull)
 
 cv2.imshow("hull", hull)
