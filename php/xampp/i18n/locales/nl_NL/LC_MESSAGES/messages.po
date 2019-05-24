@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: test\n"
-"POT-Creation-Date: 2019-05-23 15:45+0300\n"
-"PO-Revision-Date: 2019-05-23 16:17+0300\n"
+"POT-Creation-Date: 2019-05-24 12:23+0300\n"
+"PO-Revision-Date: 2019-05-24 12:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: team@testing.it\n"
 "Language: nl_NL\n"
@@ -15,10 +15,10 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: test-locale.php:16
+#: index.php:24
 msgid "title"
 msgstr "titel"
 
-#: test-locale.php:17
+#: index.php:25
 msgid "content"
 msgstr "inhoud"
