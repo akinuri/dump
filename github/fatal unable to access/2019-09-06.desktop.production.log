@@ -1,0 +1,357 @@
+2019-09-06T07:19:34.741Z - info: [ui] [AppStore] loading 1 repositories from store
+2019-09-06T07:19:34.742Z - info: [ui] [AppStore] found account: akinuri (Noreh AD)
+2019-09-06T07:19:35.038Z - info: [ui] launching: 2.1.3 (Windows 10.0.17763)
+2019-09-06T07:19:35.039Z - info: [ui] execPath: 'C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\GitHubDesktop.exe'
+2019-09-06T07:19:55.907Z - warn: [ui] fetchAccount: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T07:19:55.907Z - warn: [ui] fetchUser: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T07:19:55.907Z - warn: [ui] Error refreshing account 'akinuri'
+TypeError: Failed to fetch
+2019-09-06T07:27:36.020Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress (took 21.322s)
+2019-09-06T07:27:36.026Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/test.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T12:56:51.027Z - info: [ui] [AppStore] loading 1 repositories from store
+2019-09-06T12:56:51.028Z - info: [ui] [AppStore] found account: akinuri (Noreh AD)
+2019-09-06T12:56:51.319Z - info: [ui] [BranchPruner] Last prune took place in 19 hours - skipping
+2019-09-06T12:56:51.889Z - info: [ui] launching: 2.1.3 (Windows 10.0.17763)
+2019-09-06T12:56:51.890Z - info: [ui] execPath: 'C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\GitHubDesktop.exe'
+2019-09-06T12:57:12.463Z - warn: [ui] fetchAccount: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T12:57:12.463Z - warn: [ui] fetchUser: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T12:57:12.463Z - warn: [ui] Error refreshing account 'akinuri'
+TypeError: Failed to fetch
+2019-09-06T12:57:12.464Z - warn: [ui] fetchMentionables: failed for akinuri/test
+TypeError: Failed to fetch
+2019-09-06T12:57:12.464Z - warn: [ui] fetchIssues: failed for repository akinuri/test
+TypeError: Failed to fetch
+2019-09-06T12:57:12.464Z - warn: [ui] Unable to fetch issues for akinuri/test
+TypeError: Failed to fetch
+2019-09-06T12:57:12.466Z - warn: [ui] failed fetching open PRs for repository akinuri/test
+TypeError: Failed to fetch
+2019-09-06T12:57:12.466Z - error: [ui] Error refreshing pull requests for 'akinuri/test'
+TypeError: Failed to fetch
+2019-09-06T12:57:12.471Z - warn: [ui] fetchRepositories: TypeError: Failed to fetch
+2019-09-06T12:57:21.654Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 21.247s)
+2019-09-06T12:57:21.658Z - error: [ui] `git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/test.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T12:57:22.610Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+Error: Not Found
+    at Object.t.parsedResponse (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\http.ts:171:4)
+    at _.fetchProtectedBranches (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\api.ts:723:14)
+    at ze.updateBranchProtectionsFromAPI (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3154:9)
+    at C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3839:9
+    at ze.withPushPullFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3436:7)
+    at ze.performFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3801:5)
+    at t.BackgroundFetcher.performAndScheduleFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\helpers\background-fetcher.ts:97:9)
+2019-09-06T12:57:37.843Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/element.js.git - akinuri (has token)
+2019-09-06T12:57:41.418Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/element.js.git C:\Users\Noreh\Documents\GitHub\element.js (took 3.499s)
+2019-09-06T12:57:41.480Z - info: [ui] [AppStore] adding repository at C:\Users\Noreh\Documents\GitHub\element.js to store
+2019-09-06T12:57:41.557Z - info: [ui] [BranchPruner] Last prune took place in 18 hours - skipping
+2019-09-06T12:57:41.740Z - warn: [ui] fetchMentionables: 'repos/akinuri/test/mentionables/users' returned a 404
+2019-09-06T12:57:41.988Z - warn: [ui] fetchRepository: 'akinuri/test' returned a 404
+2019-09-06T12:57:42.043Z - warn: [ui] fetchAll: 'repos/akinuri/test/issues?state=open' returned a 404
+2019-09-06T12:57:44.090Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.383s)
+2019-09-06T12:57:44.091Z - error: [ui] `git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: repository 'https://github.com/akinuri/test.git/' not found
+
+(The error was parsed as 8: The repository does not seem to exist anymore. You may not have access, or it may have been deleted or renamed.)
+2019-09-06T12:57:44.324Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+Error: Not Found
+    at Object.t.parsedResponse (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\http.ts:171:4)
+    at _.fetchProtectedBranches (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\api.ts:723:14)
+    at ze.updateBranchProtectionsFromAPI (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3154:9)
+    at C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3839:9
+    at ze.withPushPullFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3436:7)
+    at ze.performFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3801:5)
+    at t.BackgroundFetcher.performAndScheduleFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\helpers\background-fetcher.ts:97:9)
+2019-09-06T12:57:51.866Z - info: [ui] [BranchPruner] Last prune took place in 18 hours - skipping
+2019-09-06T12:57:52.082Z - warn: [ui] fetchRepository: 'akinuri/test' returned a 404
+2019-09-06T12:57:52.086Z - warn: [ui] fetchMentionables: 'repos/akinuri/test/mentionables/users' returned a 404
+2019-09-06T12:57:52.118Z - warn: [ui] fetchAll: 'repos/akinuri/test/issues?state=open' returned a 404
+2019-09-06T12:57:54.290Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.281s)
+2019-09-06T12:57:54.290Z - error: [ui] `git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+remote: Repository not found.
+fatal: repository 'https://github.com/akinuri/test.git/' not found
+
+(The error was parsed as 8: The repository does not seem to exist anymore. You may not have access, or it may have been deleted or renamed.)
+2019-09-06T12:57:54.574Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+Error: Not Found
+    at Object.t.parsedResponse (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\http.ts:171:4)
+    at _.fetchProtectedBranches (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\api.ts:723:14)
+    at ze.updateBranchProtectionsFromAPI (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3154:9)
+    at C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3839:9
+    at ze.withPushPullFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3436:7)
+    at ze.performFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\app-store.ts:3801:5)
+    at t.BackgroundFetcher.performAndScheduleFetch (C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\webpack:\app\src\lib\stores\helpers\background-fetcher.ts:97:9)
+2019-09-06T12:57:56.570Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: test - akinuri (has token)
+2019-09-06T12:57:58.624Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress (took 1.981s)
+2019-09-06T12:58:06.666Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T12:58:09.283Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.469s)
+2019-09-06T12:58:15.011Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/element.php.git - akinuri (has token)
+2019-09-06T12:58:18.183Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/element.php.git C:\Users\Noreh\Documents\GitHub\element.php (took 3.094s)
+2019-09-06T12:58:18.245Z - info: [ui] [AppStore] adding repository at C:\Users\Noreh\Documents\GitHub\element.php to store
+2019-09-06T12:58:18.539Z - info: [ui] [BranchPruner] No branches to prune.
+2019-09-06T12:58:51.945Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: element.php - akinuri (has token)
+2019-09-06T12:59:13.224Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 21.198s)
+2019-09-06T12:59:13.229Z - error: [ui] `git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/element.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T12:59:13.726Z - info: [ui] Background fetch for 2 repositories took 22.640sec
+2019-09-06T12:59:29.360Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T12:59:31.512Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T12:59:34.219Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.587s)
+2019-09-06T12:59:34.328Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T12:59:37.647Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 3.231s)
+2019-09-06T12:59:56.447Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/HTMLElement.php.git - akinuri (has token)
+2019-09-06T12:59:59.588Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/HTMLElement.php.git C:\Users\Noreh\Documents\GitHub\element.php (took 3.069s)
+2019-09-06T12:59:59.674Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:00:07.489Z - info: [ui] [BranchPruner] No branches to prune.
+2019-09-06T13:00:09.734Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.341s)
+2019-09-06T13:01:06.465Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/HTMLElement.php' took 1.096s
+2019-09-06T13:01:06.791Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:01:28.094Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.228s)
+2019-09-06T13:01:28.097Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/HTMLElement.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:03:10.039Z - info: [ui] [AppStore] loading 2 repositories from store
+2019-09-06T13:03:10.040Z - info: [ui] [AppStore] found account: akinuri (Noreh AD)
+2019-09-06T13:03:10.383Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:03:11.239Z - info: [ui] launching: 2.1.3 (Windows 10.0.17763)
+2019-09-06T13:03:11.240Z - info: [ui] execPath: 'C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\GitHubDesktop.exe'
+2019-09-06T13:03:15.481Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:03:31.176Z - warn: [ui] fetchAccount: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:03:31.177Z - warn: [ui] fetchUser: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:03:31.177Z - warn: [ui] Error refreshing account 'akinuri'
+TypeError: Failed to fetch
+2019-09-06T13:03:31.178Z - warn: [ui] fetchMentionables: failed for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:03:31.353Z - warn: [ui] fetchIssues: failed for repository akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:03:31.353Z - warn: [ui] Unable to fetch issues for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:03:31.430Z - warn: [ui] failed fetching open PRs for repository akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:03:31.431Z - error: [ui] Error refreshing pull requests for 'akinuri/HTMLElement.php'
+TypeError: Failed to fetch
+2019-09-06T13:03:36.982Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.381s)
+2019-09-06T13:03:36.986Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/HTMLElement.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:03:54.802Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/php-lib.git - akinuri (has token)
+2019-09-06T13:03:57.989Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/php-lib.git C:\Users\Noreh\Documents\GitHub\php-lib (took 3.124s)
+2019-09-06T13:03:58.036Z - info: [ui] [AppStore] adding repository at C:\Users\Noreh\Documents\GitHub\php-lib to store
+2019-09-06T13:03:58.099Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:04:03.152Z - info: [ui] [BranchPruner] No branches to prune.
+2019-09-06T13:04:04.241Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:04:09.220Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.898s)
+2019-09-06T13:04:12.901Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 3.588s)
+2019-09-06T13:05:31.389Z - warn: [ui] fetchRepository: an error occurred for 'akinuri/element.js'
+TypeError: Failed to fetch
+2019-09-06T13:05:31.637Z - warn: [ui] fetchRepository: an error occurred for 'akinuri/element.js'
+TypeError: Failed to fetch
+2019-09-06T13:05:36.937Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: php-lib - akinuri (has token)
+2019-09-06T13:05:58.251Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 21.260s)
+2019-09-06T13:05:58.254Z - error: [ui] `git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/php-lib.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:05:58.847Z - info: [ui] Background fetch for 3 repositories took 48.701sec
+2019-09-06T13:06:18.583Z - info: [ui] [AppStore] adding repository at C:\Users\Noreh\Documents\GitHub\Image.php to store
+2019-09-06T13:10:25.550Z - info: [ui] [Timing] Action 'create commit' for 'Image.php' took 0.855s
+2019-09-06T13:10:47.444Z - warn: [ui] fetchOrgs: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:12:43.152Z - warn: [ui] fetchOrgs: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:12:43.365Z - error: [ui] createRepository: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:13:25.441Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress (took 21.213s)
+2019-09-06T13:13:25.447Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:13:34.390Z - info: [ui] [AppStore] loading 4 repositories from store
+2019-09-06T13:13:34.391Z - info: [ui] [AppStore] found account: akinuri (Noreh AD)
+2019-09-06T13:13:34.563Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:13:35.340Z - info: [ui] launching: 2.1.3 (Windows 10.0.17763)
+2019-09-06T13:13:35.341Z - info: [ui] execPath: 'C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\GitHubDesktop.exe'
+2019-09-06T13:13:43.316Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:13:55.791Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master --set-upstream --progress (took 12.406s)
+2019-09-06T13:13:58.175Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.333s)
+2019-09-06T13:15:04.362Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 1.042s
+2019-09-06T13:15:04.595Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:15:25.914Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.219s)
+2019-09-06T13:15:25.919Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:15:28.512Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:15:36.101Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 7.534s)
+2019-09-06T13:15:39.960Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 3.803s)
+2019-09-06T13:15:47.525Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: php-lib - akinuri (has token)
+2019-09-06T13:15:49.677Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.095s)
+2019-09-06T13:15:50.679Z - info: [ui] Background fetch for 4 repositories took 16.235sec
+2019-09-06T13:17:54.308Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.823s
+2019-09-06T13:17:54.953Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:18:02.726Z - warn: [ui] failed fetching open PRs for repository akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:18:02.727Z - error: [ui] Error refreshing pull requests for 'akinuri/Image.php'
+TypeError: Failed to fetch
+2019-09-06T13:18:16.218Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.200s)
+2019-09-06T13:18:16.223Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:18:18.345Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:18:25.239Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 6.835s)
+2019-09-06T13:18:27.443Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.154s)
+2019-09-06T13:18:47.474Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.859s
+2019-09-06T13:18:48.057Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:18:53.053Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.942s)
+2019-09-06T13:18:55.539Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.435s)
+2019-09-06T13:19:16.592Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.799s
+2019-09-06T13:19:16.950Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:19:22.969Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 5.967s)
+2019-09-06T13:19:25.477Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.458s)
+2019-09-06T13:20:21.582Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.824s
+2019-09-06T13:20:22.049Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:20:43.297Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.191s)
+2019-09-06T13:20:43.298Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:20:45.875Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:20:52.688Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 6.759s)
+2019-09-06T13:20:54.923Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.184s)
+2019-09-06T13:25:05.600Z - warn: [ui] getFetchPollInterval: failed for akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:27:12.241Z - warn: [ui] failed fetching open PRs for repository akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:27:12.242Z - error: [ui] Error refreshing pull requests for 'akinuri/Image.php'
+TypeError: Failed to fetch
+2019-09-06T13:27:50.817Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.820s
+2019-09-06T13:27:51.266Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:28:12.660Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.335s)
+2019-09-06T13:28:12.666Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:28:24.010Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:28:28.808Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.738s)
+2019-09-06T13:28:31.044Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.169s)
+2019-09-06T13:28:52.051Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+TypeError: Failed to fetch
+2019-09-06T13:29:27.856Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:29:30.789Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/HTMLElement.php' took 0.918s
+2019-09-06T13:29:31.113Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:29:46.632Z - warn: [ui] failed fetching open PRs for repository akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:29:46.632Z - error: [ui] Error refreshing pull requests for 'akinuri/Image.php'
+TypeError: Failed to fetch
+2019-09-06T13:29:46.875Z - warn: [ui] getFetchPollInterval: failed for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:29:48.815Z - warn: [ui] fetchMentionables: failed for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:29:48.816Z - warn: [ui] fetchRepository: an error occurred for 'akinuri/HTMLElement.php'
+TypeError: Failed to fetch
+2019-09-06T13:29:48.816Z - warn: [ui] fetchIssues: failed for repository akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:29:48.817Z - warn: [ui] Unable to fetch issues for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:29:48.849Z - warn: [ui] failed fetching open PRs for repository akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:29:48.850Z - error: [ui] Error refreshing pull requests for 'akinuri/HTMLElement.php'
+TypeError: Failed to fetch
+2019-09-06T13:29:52.359Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.189s)
+2019-09-06T13:29:52.360Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/HTMLElement.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:30:16.789Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:30:19.386Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:30:21.459Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.618s)
+2019-09-06T13:30:23.943Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.435s)
+2019-09-06T13:30:37.429Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.835s
+2019-09-06T13:30:37.993Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:30:40.395Z - warn: [ui] getFetchPollInterval: failed for akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:30:40.395Z - warn: [ui] fetchMentionables: failed for akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:30:40.396Z - warn: [ui] fetchRepository: an error occurred for 'akinuri/Image.php'
+TypeError: Failed to fetch
+2019-09-06T13:30:40.397Z - warn: [ui] fetchIssues: failed for repository akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:30:40.398Z - warn: [ui] Unable to fetch issues for akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:30:40.611Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+TypeError: Failed to fetch
+2019-09-06T13:30:42.811Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.762s)
+2019-09-06T13:30:45.098Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.235s)
+2019-09-06T13:30:52.648Z - info: [ui] Background fetch for 4 repositories took 1.965sec
+2019-09-06T13:32:06.435Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/Image.php' took 0.872s
+2019-09-06T13:32:06.839Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:32:28.262Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.365s)
+2019-09-06T13:32:28.265Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/Image.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:32:38.303Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Image.php - akinuri (has token)
+2019-09-06T13:32:42.991Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.629s)
+2019-09-06T13:32:45.263Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.218s)
+2019-09-06T13:35:11.229Z - warn: [ui] failed fetching open PRs for repository akinuri/Image.php
+TypeError: Failed to fetch
+2019-09-06T13:35:11.230Z - error: [ui] Error refreshing pull requests for 'akinuri/Image.php'
+TypeError: Failed to fetch
+2019-09-06T13:35:13.664Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2019-09-06T13:35:16.412Z - info: [ui] [Timing] Action 'create commit' for 'akinuri/HTMLElement.php' took 0.833s
+2019-09-06T13:35:16.826Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:35:38.065Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 21.180s)
+2019-09-06T13:35:38.065Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin master:master --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/akinuri/HTMLElement.php.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:35:57.382Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: HTMLElement.php - akinuri (has token)
+2019-09-06T13:36:02.262Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin master:master --progress (took 4.821s)
+2019-09-06T13:36:04.598Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 2.285s)
+2019-09-06T13:38:48.505Z - info: [ui] [AppStore] loading 4 repositories from store
+2019-09-06T13:38:48.506Z - info: [ui] [AppStore] found account: akinuri (Noreh AD)
+2019-09-06T13:38:49.460Z - info: [ui] launching: 2.1.3 (Windows 10.0.17763)
+2019-09-06T13:38:49.460Z - info: [ui] execPath: 'C:\Users\Noreh\AppData\Local\GitHubDesktop\app-2.1.3\GitHubDesktop.exe'
+2019-09-06T13:39:09.528Z - warn: [ui] fetchMentionables: failed for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:39:09.528Z - warn: [ui] fetchAccount: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:39:09.528Z - warn: [ui] fetchUser: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2019-09-06T13:39:09.529Z - warn: [ui] Error refreshing account 'akinuri'
+TypeError: Failed to fetch
+2019-09-06T13:39:09.730Z - warn: [ui] fetchIssues: failed for repository akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:39:09.730Z - warn: [ui] Unable to fetch issues for akinuri/HTMLElement.php
+TypeError: Failed to fetch
+2019-09-06T13:39:09.774Z - warn: [ui] fetchRepositories: TypeError: Failed to fetch
+2019-09-06T13:39:20.519Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/dump.git - akinuri (has token)
+2019-09-06T13:39:41.915Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/dump.git C:\Users\Noreh\Documents\GitHub\dump (took 21.330s)
+2019-09-06T13:39:41.920Z - error: [ui] `git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/dump.git C:\Users\Noreh\Documents\GitHub\dump` exited with an unexpected code: 128.
+stderr:
+Cloning into 'C:\Users\Noreh\Documents\GitHub\dump'...
+fatal: unable to access 'https://github.com/akinuri/dump.git/': Failed to connect to github.com port 443: Timed out
+
+2019-09-06T13:39:56.652Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/akinuri/dump.git - akinuri (has token)
+2019-09-06T13:40:51.110Z - info: [ui] Background fetch for 4 repositories took 2.535sec
+2019-09-06T13:41:00.210Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/akinuri/dump.git C:\Users\Noreh\Documents\GitHub\dump (took 63.493s)
+2019-09-06T13:41:00.262Z - info: [ui] [AppStore] adding repository at C:\Users\Noreh\Documents\GitHub\dump to store
+2019-09-06T13:41:00.331Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
