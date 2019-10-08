@@ -5,9 +5,9 @@ $db = [
         // id , name, surname, age, sex
         [ 1, "Oliver", "Alston",   14, "male"   ],
         [ 2, "Ava",    "Phillips", 21, "female" ],
-        [ 2, "Jack",   "Morton",   25, "male"   ],
-        [ 3, "Harry",  "Nye",      20, "male"   ],
-        [ 2, "Kayla",  "Brown",    19, "female" ],
+        [ 3, "Jack",   "Morton",   25, "male"   ],
+        [ 4, "Harry",  "Nye",      20, "male"   ],
+        [ 5, "Kayla",  "Brown",    19, "female" ],
     ],
     
     "roles" => [
@@ -20,8 +20,8 @@ $db = [
     "user_role" => [
         // id , user_id, role_id
         [ 1, 1, 3],
-        [ 1, 2, 1],
-        [ 1, 3, 2],
+        [ 2, 2, 1],
+        [ 3, 3, 2],
     ],
 ];
 
