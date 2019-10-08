@@ -1,0 +1,43 @@
+Array
+(
+    [0] => Array
+        (
+            [0] => 1
+            [1] => Oliver
+            [2] => Alston
+            [3] => 14
+            [4] => male
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [name] => Oliver
+            [surname] => Alston
+        )
+
+    [1] => Array
+        (
+            [name] => Jack
+            [surname] => Morton
+        )
+
+    [2] => Array
+        (
+            [name] => Harry
+            [surname] => Nye
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [0] => 3
+            [1] => manager
+            [2] => Manager
+        )
+
+)
