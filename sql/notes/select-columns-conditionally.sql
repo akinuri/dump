@@ -31,6 +31,7 @@ FROM users
     LEFT JOIN admins    ON (users.type = "admin"     AND users.user_id = admins.user_id) 
     LEFT JOIN staff     ON (users.type = "staff"     AND users.user_id = staff.user_id) 
     LEFT JOIN customers ON (users.type = "customers" AND users.user_id = customers.user_id)
+WHERE users.email = "someone@example.com"
 
 -- something like this would be much better
 SELECT users.*,
@@ -43,6 +44,7 @@ FROM users
     LEFT JOIN admins    ON (users.type = "admin"     AND users.user_id = admins.user_id) 
     LEFT JOIN staff     ON (users.type = "staff"     AND users.user_id = staff.user_id) 
     LEFT JOIN customers ON (users.type = "customers" AND users.user_id = customers.user_id)
+WHERE users.email = "someone@example.com"
 
 
 -- for more info:
