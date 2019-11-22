@@ -16,7 +16,7 @@ SELECT * FROM staff
 JOIN users USING (user_id)
 
 -- I thought I could use CASE, but I don't think it'll help in this case
--- I'd have to add like 30 CASE
+-- I'd have to add like 30+ CASEs
 
 -- select users.*, (+ columns from the joined table)
 SELECT users.*,
