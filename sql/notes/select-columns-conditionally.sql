@@ -15,6 +15,36 @@ WHERE users.email = "someone@example.com"
 SELECT * FROM staff
 JOIN users USING (user_id)
 
+-- I thought I could use CASE, but I don't think it'll help in this case
+-- I'd have to add like 30 CASE
+
+-- select users.*, (+ columns from the joined table)
+SELECT users.*,
+    (CASE
+        WHEN users.type = "admin" THEN admins.name
+    END) as name,
+    (CASE
+        WHEN users.type = "admin" THEN admins.surname
+    END) as surname,
+    -- on and on
+FROM users
+    LEFT JOIN admins    ON (users.type = "admin"     AND users.user_id = admins.user_id) 
+    LEFT JOIN staff     ON (users.type = "staff"     AND users.user_id = staff.user_id) 
+    LEFT JOIN customers ON (users.type = "customers" AND users.user_id = customers.user_id)
+
+-- something like this would be much better
+SELECT users.*,
+    (CASE
+        WHEN users.type = "admin"    THEN [select admins.*]
+        WHEN users.type = "staff"    THEN [select staff.*]
+        WHEN users.type = "customer" THEN [select customers.*]
+    END)
+FROM users
+    LEFT JOIN admins    ON (users.type = "admin"     AND users.user_id = admins.user_id) 
+    LEFT JOIN staff     ON (users.type = "staff"     AND users.user_id = staff.user_id) 
+    LEFT JOIN customers ON (users.type = "customers" AND users.user_id = customers.user_id)
+
+
 -- for more info:
 -- https://dbdiagram.io/d/5dd2bbe7edf08a25543e106e
 -- https://stackoverflow.com/questions/58951653/how-to-handle-different-types-of-users-when-loggin-in
