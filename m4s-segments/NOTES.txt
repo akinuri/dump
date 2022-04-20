@@ -1,0 +1,5 @@
+The master.json URL might be expired. If that's the case, one needs to visit the course site, start playing an/the episode, and get/copy the master.json URL from the Network tab in the Dev Tools.
+
+The copied URL needs to be entered/updated in two files: 1...py and 2...py
+
+If you want to run 4...py script, you might need to update the two variables in the file with the segments' folder name. If you did not work with the existing segment files and downloaded them again, the folder/file name might be changed. This needs to be reflected in the 4...py file too.
